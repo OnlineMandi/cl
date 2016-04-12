@@ -1,0 +1,663 @@
+[17-Feb-2016 03:10:10 UTC] An Error occurred while handling another error:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('error', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(85): yii\base\Module->runAction('site/error')
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(109): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#12 {main}
+Previous exception:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/login', Array)
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/clos/public_html/dev/backend/index.php(18): yii\base\Application->run()
+#12 {main}
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/clos/public_html/dev',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => '_ga=GA1.2.1999075084.1455588700; _frontendSessionId=6d8e1eed2291c293b6d493a162d4600e; _csrf=d245fe076a2e09a52461d79bffe014fbe16b7e5e6b998882360c1a7ccadc8622a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uO5H_zGmCd-94wi4fEu0EyCqBMf5D_X7%22%3B%7D; frontend=8109ac4b058536a493522302efb03c19; _backendSessionId=8d97df1e395369d33d7798c71c5295d0; PHPSESSID=2ce6afa6501cffec917d76eb09773e12',
+    'HTTP_HOST' => 'dev.closera.com',
+    'HTTP_PRAGMA' => 'no-cache',
+    'HTTP_REFERER' => 'http://dev.closera.com/backend/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0',
+    'PATH' => '/bin:/usr/bin',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'VsPkkivy1x8AAFjJQcUAAAAH',
+    'REDIRECT_URL' => '/backend/site/login',
+    'REMOTE_ADDR' => '122.173.218.36',
+    'REMOTE_PORT' => '60378',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_URI' => '/backend/site/login',
+    'SCRIPT_FILENAME' => '/home/clos/public_html/dev/backend/index.php',
+    'SCRIPT_NAME' => '/backend/index.php',
+    'SERVER_ADDR' => '43.242.215.31',
+    'SERVER_ADMIN' => 'webmaster@dev.closera.com',
+    'SERVER_NAME' => 'dev.closera.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4 Server at dev.closera.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4',
+    'UNIQUE_ID' => 'VsPkkivy1x8AAFjJQcUAAAAH',
+    'PHP_SELF' => '/backend/index.php',
+    'REQUEST_TIME_FLOAT' => 1455678610.364388942718505859375,
+    'REQUEST_TIME' => 1455678610,
+    'argv' => [],
+    'argc' => 0,
+]
+[17-Feb-2016 03:10:13 UTC] An Error occurred while handling another error:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('error', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(85): yii\base\Module->runAction('site/error')
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(109): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#12 {main}
+Previous exception:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/login', Array)
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/clos/public_html/dev/backend/index.php(18): yii\base\Application->run()
+#12 {main}
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/clos/public_html/dev',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => '_ga=GA1.2.1999075084.1455588700; _frontendSessionId=6d8e1eed2291c293b6d493a162d4600e; _csrf=d245fe076a2e09a52461d79bffe014fbe16b7e5e6b998882360c1a7ccadc8622a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uO5H_zGmCd-94wi4fEu0EyCqBMf5D_X7%22%3B%7D; frontend=8109ac4b058536a493522302efb03c19; _backendSessionId=8d97df1e395369d33d7798c71c5295d0; PHPSESSID=2ce6afa6501cffec917d76eb09773e12',
+    'HTTP_HOST' => 'dev.closera.com',
+    'HTTP_PRAGMA' => 'no-cache',
+    'HTTP_REFERER' => 'http://dev.closera.com/backend/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0',
+    'PATH' => '/bin:/usr/bin',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'VsPklSvy1x8AAFleYR0AAAAF',
+    'REDIRECT_URL' => '/backend/site/login',
+    'REMOTE_ADDR' => '122.173.218.36',
+    'REMOTE_PORT' => '60379',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_URI' => '/backend/site/login',
+    'SCRIPT_FILENAME' => '/home/clos/public_html/dev/backend/index.php',
+    'SCRIPT_NAME' => '/backend/index.php',
+    'SERVER_ADDR' => '43.242.215.31',
+    'SERVER_ADMIN' => 'webmaster@dev.closera.com',
+    'SERVER_NAME' => 'dev.closera.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4 Server at dev.closera.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4',
+    'UNIQUE_ID' => 'VsPklSvy1x8AAFleYR0AAAAF',
+    'PHP_SELF' => '/backend/index.php',
+    'REQUEST_TIME_FLOAT' => 1455678613.1289041042327880859375,
+    'REQUEST_TIME' => 1455678613,
+    'argv' => [],
+    'argc' => 0,
+]
+[17-Feb-2016 03:10:22 UTC] An Error occurred while handling another error:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('error', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(85): yii\base\Module->runAction('site/error')
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(109): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#12 {main}
+Previous exception:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/login', Array)
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/clos/public_html/dev/backend/index.php(18): yii\base\Application->run()
+#12 {main}
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/clos/public_html/dev',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => '_ga=GA1.2.1999075084.1455588700; _frontendSessionId=6d8e1eed2291c293b6d493a162d4600e; _csrf=d245fe076a2e09a52461d79bffe014fbe16b7e5e6b998882360c1a7ccadc8622a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uO5H_zGmCd-94wi4fEu0EyCqBMf5D_X7%22%3B%7D; frontend=8109ac4b058536a493522302efb03c19; _backendSessionId=8d97df1e395369d33d7798c71c5295d0; PHPSESSID=2ce6afa6501cffec917d76eb09773e12',
+    'HTTP_HOST' => 'dev.closera.com',
+    'HTTP_PRAGMA' => 'no-cache',
+    'HTTP_REFERER' => 'http://dev.closera.com/backend/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0',
+    'PATH' => '/bin:/usr/bin',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'VsPknivy1x8AAFphnSAAAAAI',
+    'REDIRECT_URL' => '/backend/site/login',
+    'REMOTE_ADDR' => '122.173.218.36',
+    'REMOTE_PORT' => '60385',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_URI' => '/backend/site/login',
+    'SCRIPT_FILENAME' => '/home/clos/public_html/dev/backend/index.php',
+    'SCRIPT_NAME' => '/backend/index.php',
+    'SERVER_ADDR' => '43.242.215.31',
+    'SERVER_ADMIN' => 'webmaster@dev.closera.com',
+    'SERVER_NAME' => 'dev.closera.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4 Server at dev.closera.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4',
+    'UNIQUE_ID' => 'VsPknivy1x8AAFphnSAAAAAI',
+    'PHP_SELF' => '/backend/index.php',
+    'REQUEST_TIME_FLOAT' => 1455678622.671204090118408203125,
+    'REQUEST_TIME' => 1455678622,
+    'argv' => [],
+    'argc' => 0,
+]
+[17-Feb-2016 03:10:23 UTC] An Error occurred while handling another error:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('error', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(85): yii\base\Module->runAction('site/error')
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(109): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#12 {main}
+Previous exception:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/login', Array)
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/clos/public_html/dev/backend/index.php(18): yii\base\Application->run()
+#12 {main}
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/clos/public_html/dev',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => '_ga=GA1.2.1999075084.1455588700; _frontendSessionId=6d8e1eed2291c293b6d493a162d4600e; _csrf=d245fe076a2e09a52461d79bffe014fbe16b7e5e6b998882360c1a7ccadc8622a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uO5H_zGmCd-94wi4fEu0EyCqBMf5D_X7%22%3B%7D; frontend=8109ac4b058536a493522302efb03c19; _backendSessionId=8d97df1e395369d33d7798c71c5295d0; PHPSESSID=2ce6afa6501cffec917d76eb09773e12',
+    'HTTP_HOST' => 'dev.closera.com',
+    'HTTP_PRAGMA' => 'no-cache',
+    'HTTP_REFERER' => 'http://dev.closera.com/backend/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0',
+    'PATH' => '/bin:/usr/bin',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'VsPknyvy1x8AAFsH3IIAAAAC',
+    'REDIRECT_URL' => '/backend/site/login',
+    'REMOTE_ADDR' => '122.173.218.36',
+    'REMOTE_PORT' => '60386',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_URI' => '/backend/site/login',
+    'SCRIPT_FILENAME' => '/home/clos/public_html/dev/backend/index.php',
+    'SCRIPT_NAME' => '/backend/index.php',
+    'SERVER_ADDR' => '43.242.215.31',
+    'SERVER_ADMIN' => 'webmaster@dev.closera.com',
+    'SERVER_NAME' => 'dev.closera.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4 Server at dev.closera.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4',
+    'UNIQUE_ID' => 'VsPknyvy1x8AAFsH3IIAAAAC',
+    'PHP_SELF' => '/backend/index.php',
+    'REQUEST_TIME_FLOAT' => 1455678623.826611995697021484375,
+    'REQUEST_TIME' => 1455678623,
+    'argv' => [],
+    'argc' => 0,
+]
+[17-Feb-2016 03:10:24 UTC] An Error occurred while handling another error:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('error', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(85): yii\base\Module->runAction('site/error')
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(109): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#12 {main}
+Previous exception:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/login', Array)
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/clos/public_html/dev/backend/index.php(18): yii\base\Application->run()
+#12 {main}
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/clos/public_html/dev',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => '_ga=GA1.2.1999075084.1455588700; _frontendSessionId=6d8e1eed2291c293b6d493a162d4600e; _csrf=d245fe076a2e09a52461d79bffe014fbe16b7e5e6b998882360c1a7ccadc8622a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uO5H_zGmCd-94wi4fEu0EyCqBMf5D_X7%22%3B%7D; frontend=8109ac4b058536a493522302efb03c19; _backendSessionId=8d97df1e395369d33d7798c71c5295d0; PHPSESSID=2ce6afa6501cffec917d76eb09773e12',
+    'HTTP_HOST' => 'dev.closera.com',
+    'HTTP_PRAGMA' => 'no-cache',
+    'HTTP_REFERER' => 'http://dev.closera.com/backend/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0',
+    'PATH' => '/bin:/usr/bin',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'VsPknyvy1x8AAFiQHQ0AAAAB',
+    'REDIRECT_URL' => '/backend/site/login',
+    'REMOTE_ADDR' => '122.173.218.36',
+    'REMOTE_PORT' => '60387',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_URI' => '/backend/site/login',
+    'SCRIPT_FILENAME' => '/home/clos/public_html/dev/backend/index.php',
+    'SCRIPT_NAME' => '/backend/index.php',
+    'SERVER_ADDR' => '43.242.215.31',
+    'SERVER_ADMIN' => 'webmaster@dev.closera.com',
+    'SERVER_NAME' => 'dev.closera.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4 Server at dev.closera.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4',
+    'UNIQUE_ID' => 'VsPknyvy1x8AAFiQHQ0AAAAB',
+    'PHP_SELF' => '/backend/index.php',
+    'REQUEST_TIME_FLOAT' => 1455678624.0195209980010986328125,
+    'REQUEST_TIME' => 1455678624,
+    'argv' => [],
+    'argc' => 0,
+]
+[17-Feb-2016 03:10:24 UTC] An Error occurred while handling another error:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('error', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(85): yii\base\Module->runAction('site/error')
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(109): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#12 {main}
+Previous exception:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/login', Array)
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/clos/public_html/dev/backend/index.php(18): yii\base\Application->run()
+#12 {main}
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/clos/public_html/dev',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => '_ga=GA1.2.1999075084.1455588700; _frontendSessionId=6d8e1eed2291c293b6d493a162d4600e; _csrf=d245fe076a2e09a52461d79bffe014fbe16b7e5e6b998882360c1a7ccadc8622a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uO5H_zGmCd-94wi4fEu0EyCqBMf5D_X7%22%3B%7D; frontend=8109ac4b058536a493522302efb03c19; _backendSessionId=8d97df1e395369d33d7798c71c5295d0; PHPSESSID=2ce6afa6501cffec917d76eb09773e12',
+    'HTTP_HOST' => 'dev.closera.com',
+    'HTTP_PRAGMA' => 'no-cache',
+    'HTTP_REFERER' => 'http://dev.closera.com/backend/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0',
+    'PATH' => '/bin:/usr/bin',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'VsPkoCvy1x8AAFCx5owAAAAE',
+    'REDIRECT_URL' => '/backend/site/login',
+    'REMOTE_ADDR' => '122.173.218.36',
+    'REMOTE_PORT' => '60388',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_URI' => '/backend/site/login',
+    'SCRIPT_FILENAME' => '/home/clos/public_html/dev/backend/index.php',
+    'SCRIPT_NAME' => '/backend/index.php',
+    'SERVER_ADDR' => '43.242.215.31',
+    'SERVER_ADMIN' => 'webmaster@dev.closera.com',
+    'SERVER_NAME' => 'dev.closera.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4 Server at dev.closera.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4',
+    'UNIQUE_ID' => 'VsPkoCvy1x8AAFCx5owAAAAE',
+    'PHP_SELF' => '/backend/index.php',
+    'REQUEST_TIME_FLOAT' => 1455678624.26319599151611328125,
+    'REQUEST_TIME' => 1455678624,
+    'argv' => [],
+    'argc' => 0,
+]
+[17-Feb-2016 03:10:24 UTC] An Error occurred while handling another error:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('error', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(85): yii\base\Module->runAction('site/error')
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(109): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#12 {main}
+Previous exception:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/login', Array)
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/clos/public_html/dev/backend/index.php(18): yii\base\Application->run()
+#12 {main}
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/clos/public_html/dev',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => '_ga=GA1.2.1999075084.1455588700; _frontendSessionId=6d8e1eed2291c293b6d493a162d4600e; _csrf=d245fe076a2e09a52461d79bffe014fbe16b7e5e6b998882360c1a7ccadc8622a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uO5H_zGmCd-94wi4fEu0EyCqBMf5D_X7%22%3B%7D; frontend=8109ac4b058536a493522302efb03c19; _backendSessionId=8d97df1e395369d33d7798c71c5295d0; PHPSESSID=2ce6afa6501cffec917d76eb09773e12',
+    'HTTP_HOST' => 'dev.closera.com',
+    'HTTP_PRAGMA' => 'no-cache',
+    'HTTP_REFERER' => 'http://dev.closera.com/backend/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0',
+    'PATH' => '/bin:/usr/bin',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'VsPkoCvy1x8AAFpinYoAAAAK',
+    'REDIRECT_URL' => '/backend/site/login',
+    'REMOTE_ADDR' => '122.173.218.36',
+    'REMOTE_PORT' => '60389',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_URI' => '/backend/site/login',
+    'SCRIPT_FILENAME' => '/home/clos/public_html/dev/backend/index.php',
+    'SCRIPT_NAME' => '/backend/index.php',
+    'SERVER_ADDR' => '43.242.215.31',
+    'SERVER_ADMIN' => 'webmaster@dev.closera.com',
+    'SERVER_NAME' => 'dev.closera.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4 Server at dev.closera.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4',
+    'UNIQUE_ID' => 'VsPkoCvy1x8AAFpinYoAAAAK',
+    'PHP_SELF' => '/backend/index.php',
+    'REQUEST_TIME_FLOAT' => 1455678624.467483043670654296875,
+    'REQUEST_TIME' => 1455678624,
+    'argv' => [],
+    'argc' => 0,
+]
+[17-Feb-2016 03:10:30 UTC] An Error occurred while handling another error:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('error', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(85): yii\base\Module->runAction('site/error')
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(109): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#12 {main}
+Previous exception:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/login', Array)
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/clos/public_html/dev/backend/index.php(18): yii\base\Application->run()
+#12 {main}
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/clos/public_html/dev',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => '_ga=GA1.2.1999075084.1455588700; _frontendSessionId=6d8e1eed2291c293b6d493a162d4600e; _csrf=d245fe076a2e09a52461d79bffe014fbe16b7e5e6b998882360c1a7ccadc8622a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uO5H_zGmCd-94wi4fEu0EyCqBMf5D_X7%22%3B%7D; frontend=8109ac4b058536a493522302efb03c19; _backendSessionId=8d97df1e395369d33d7798c71c5295d0; PHPSESSID=2ce6afa6501cffec917d76eb09773e12',
+    'HTTP_HOST' => 'dev.closera.com',
+    'HTTP_PRAGMA' => 'no-cache',
+    'HTTP_REFERER' => 'http://dev.closera.com/backend/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0',
+    'PATH' => '/bin:/usr/bin',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'VsPkpivy1x8AAFlaX94AAAAD',
+    'REDIRECT_URL' => '/backend/site/login',
+    'REMOTE_ADDR' => '122.173.218.36',
+    'REMOTE_PORT' => '60392',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_URI' => '/backend/site/login',
+    'SCRIPT_FILENAME' => '/home/clos/public_html/dev/backend/index.php',
+    'SCRIPT_NAME' => '/backend/index.php',
+    'SERVER_ADDR' => '43.242.215.31',
+    'SERVER_ADMIN' => 'webmaster@dev.closera.com',
+    'SERVER_NAME' => 'dev.closera.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4 Server at dev.closera.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4',
+    'UNIQUE_ID' => 'VsPkpivy1x8AAFlaX94AAAAD',
+    'PHP_SELF' => '/backend/index.php',
+    'REQUEST_TIME_FLOAT' => 1455678630.2002599239349365234375,
+    'REQUEST_TIME' => 1455678630,
+    'argv' => [],
+    'argc' => 0,
+]
+[17-Feb-2016 03:10:44 UTC] An Error occurred while handling another error:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('error', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(85): yii\base\Module->runAction('site/error')
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(109): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#12 {main}
+Previous exception:
+exception 'yii\web\ForbiddenHttpException' with message 'Login Required' in /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#9 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/login', Array)
+#10 /home/clos/public_html/dev/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/clos/public_html/dev/backend/index.php(18): yii\base\Application->run()
+#12 {main}
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/clos/public_html/dev',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => '_ga=GA1.2.1999075084.1455588700; _frontendSessionId=6d8e1eed2291c293b6d493a162d4600e; _csrf=d245fe076a2e09a52461d79bffe014fbe16b7e5e6b998882360c1a7ccadc8622a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uO5H_zGmCd-94wi4fEu0EyCqBMf5D_X7%22%3B%7D; frontend=8109ac4b058536a493522302efb03c19; _backendSessionId=8d97df1e395369d33d7798c71c5295d0; PHPSESSID=2ce6afa6501cffec917d76eb09773e12',
+    'HTTP_HOST' => 'dev.closera.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0',
+    'PATH' => '/bin:/usr/bin',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'VsPktCvy1x8AAFphnSIAAAAI',
+    'REDIRECT_URL' => '/backend/site/login',
+    'REMOTE_ADDR' => '122.173.218.36',
+    'REMOTE_PORT' => '60397',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_URI' => '/backend/site/login',
+    'SCRIPT_FILENAME' => '/home/clos/public_html/dev/backend/index.php',
+    'SCRIPT_NAME' => '/backend/index.php',
+    'SERVER_ADDR' => '43.242.215.31',
+    'SERVER_ADMIN' => 'webmaster@dev.closera.com',
+    'SERVER_NAME' => 'dev.closera.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4 Server at dev.closera.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4',
+    'UNIQUE_ID' => 'VsPktCvy1x8AAFphnSIAAAAI',
+    'PHP_SELF' => '/backend/index.php',
+    'REQUEST_TIME_FLOAT' => 1455678644.605021953582763671875,
+    'REQUEST_TIME' => 1455678644,
+    'argv' => [],
+    'argc' => 0,
+]
+[17-Feb-2016 03:30:35 UTC] PHP Parse error:  syntax error, unexpected '*', expecting ']' in /home/clos/public_html/dev/_protected/backend/controllers/BackendController.php on line 54
+[17-Feb-2016 03:30:37 UTC] PHP Parse error:  syntax error, unexpected '*', expecting ']' in /home/clos/public_html/dev/_protected/backend/controllers/BackendController.php on line 54
+[17-Feb-2016 03:30:56 UTC] PHP Parse error:  syntax error, unexpected '*' in /home/clos/public_html/dev/_protected/backend/controllers/BackendController.php on line 54
+[17-Feb-2016 03:34:01 UTC] PHP Parse error:  syntax error, unexpected '*' in /home/clos/public_html/dev/_protected/backend/controllers/BackendController.php on line 54
+[17-Feb-2016 03:34:03 UTC] PHP Parse error:  syntax error, unexpected '*' in /home/clos/public_html/dev/_protected/backend/controllers/BackendController.php on line 54
+[28-Feb-2016 15:50:17 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home/clos/public_html/dev/_protected/backend/controllers/TypeController.php on line 41
+[28-Feb-2016 16:07:03 UTC] PHP Fatal error:  Call to a member function children() on a non-object in /home/clos/public_html/dev/_protected/common/models/TypeSearch.php on line 47
+[28-Feb-2016 16:49:27 UTC] PHP Fatal error:  Call to a member function parents() on a non-object in /home/clos/public_html/dev/_protected/backend/views/type/index.php on line 10
+[29-Feb-2016 02:30:54 UTC] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/clos/public_html/dev/_protected/backend/views/attributes/_form.php on line 30
+[29-Feb-2016 11:19:13 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/clos/public_html/dev/_protected/common/models/Attributes.php on line 78
+[29-Feb-2016 11:20:10 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/clos/public_html/dev/_protected/common/models/Attributes.php on line 78
+[15-Mar-2016 12:04:09 UTC] PHP Fatal error:  Class 'backend\controllers\weightSearch' not found in /home/clos/public_html/dev/_protected/backend/controllers/TypeController.php on line 121
+[15-Mar-2016 12:04:50 UTC] PHP Parse error:  syntax error, unexpected ']' in /home/clos/public_html/dev/_protected/backend/views/type/manage-attributes.php on line 68
+[15-Mar-2016 12:04:54 UTC] PHP Parse error:  syntax error, unexpected ']' in /home/clos/public_html/dev/_protected/backend/views/type/manage-attributes.php on line 68
+[16-Mar-2016 05:36:13 UTC] PHP Fatal error:  Class 'backend\controllers\Attributes' not found in /home/clos/public_html/dev/_protected/backend/controllers/TypeController.php on line 136
+[16-Mar-2016 12:24:12 UTC] PHP Fatal error:  Cannot use object of type common\models\AttributesQuery as array in /home/clos/public_html/dev/_protected/backend/views/type/sort-attributes.php on line 31
+[16-Mar-2016 13:07:46 UTC] PHP Fatal error:  Class 'backend\controllers\GeneralAttributesSearch' not found in /home/clos/public_html/dev/_protected/backend/controllers/TypeController.php on line 171
+[16-Mar-2016 13:11:34 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/clos/public_html/dev/_protected/common/models/GeneralAttributesSearch.php on line 45
+[16-Mar-2016 13:16:53 UTC] PHP Fatal error:  Class 'backend\controllers\SliderAttributesSearch' not found in /home/clos/public_html/dev/_protected/backend/controllers/TypeController.php on line 174
+[16-Mar-2016 13:17:19 UTC] PHP Fatal error:  Cannot redeclare class common\models\GeneralAttributesSearch in /home/clos/public_html/dev/_protected/common/models/SliderAttributesSearch.php on line 61
+[16-Mar-2016 13:17:40 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/clos/public_html/dev/_protected/common/models/SliderAttributesSearch.php on line 62
+[16-Mar-2016 13:20:57 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/clos/public_html/dev/_protected/common/models/SliderAttributesSearch.php on line 62
+[16-Mar-2016 13:21:07 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/clos/public_html/dev/_protected/common/models/SliderAttributesSearch.php on line 62
+[17-Mar-2016 01:10:43 UTC] PHP Parse error:  syntax error, unexpected '$attrsModel' (T_VARIABLE) in /home/clos/public_html/dev/_protected/backend/controllers/TypeController.php on line 158
+[17-Mar-2016 01:25:29 UTC] PHP Fatal error:  Class 'backend\controllers\Response' not found in /home/clos/public_html/dev/_protected/backend/controllers/TypeController.php on line 166
+[10-Apr-2016 11:53:23 UTC] PHP Fatal error:  Cannot use common\traits\StatusChangeTrait as StatusChangeTrait because the name is already in use in /home/clos/public_html/dev/_protected/backend/controllers/TypeController.php on line 18
+[10-Apr-2016 11:53:24 UTC] PHP Fatal error:  Cannot use common\traits\StatusChangeTrait as StatusChangeTrait because the name is already in use in /home/clos/public_html/dev/_protected/backend/controllers/TypeController.php on line 18
